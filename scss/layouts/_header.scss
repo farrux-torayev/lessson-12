@@ -5,6 +5,8 @@ header {
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
     // justify-content: space-around;
     // padding: 30px 48px 0px 44px;
   }
@@ -14,8 +16,24 @@ header {
   &__list {
     display: flex;
     gap: 40px;
-    align-items: center;
+    // align-items: center;
     padding-right: 20px;
+    height: 36px;
+    
+
+  }
+  &__item{
+    height: 36px;
+    padding-top: 10px;
+  }
+  &__item:hover:after{
+    content: ""url(../../assets/icons/icon\ \(3\).svg);
+    color: black;
+    display: flex;
+    justify-content: center;
+  }
+  &__item:hover{
+    color: black;
   }
   &__button {
     width: 156px;
